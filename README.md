@@ -14,7 +14,7 @@ Python script - JaccardSimilarityHeatmap_triangle.py
 
 Example input data - Input_Concordance_AllVariantCarriers_long.tsv
 
-# CoverageStatistics
+# Coverage Statistics
 Script for conducting Kruskal-Wallis and Dunn's Test on Coverage Data from long-read RNA-sequencing protocol comparisons on kConfab Cell lines
 
 Results are also presented within the file
