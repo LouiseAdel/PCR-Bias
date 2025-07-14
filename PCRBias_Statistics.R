@@ -14,6 +14,26 @@ library(purrr)
 #Read data file
 data_controls <- read_excel("PCRBias_delta10q_Levels_controlsonly.xlsx")
 
+print(data_controls)
+# A tibble: 16 × 5
+#   SampleID    Protocol Delta10q_Percentage Delta10q_Reads FullLength_Reads
+# 1 Control_S15        1                4.43           2598            58646
+# 2 Control_S19        1               22.9            3328            14558
+# 3 Control_S15        2               17.0              10               59
+# 4 Control_S19        2                8.51              4               47
+# 5 Control_S15        3               21.3              36              169
+# 6 Control_S19        3               16.7              34              204
+# 7 Control_S15        4               44.5           17850            40139
+# 8 Control_S19        4               43.8           11671            26670
+# 9 Control_S15        5               44.0            1464             3331
+#10 Control_S19        5               46.7            2259             4834
+#11 Control_S15        6               13.5             577             4274
+#12 Control_S19        6               12.2            2344            19213
+#13 Control_S15        7                5                 8              160
+#14 Control_S19        7               12.2              14              115
+#15 Control_S15        8                1.18              3              254
+#16 Control_S19        8                1.13              5              442
+
 #Combine control counts
 combined_counts <- data_controls %>%
   group_by(Protocol) %>%
